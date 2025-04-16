@@ -1,0 +1,96 @@
+
+main {
+    background: url("imagens/384046.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh; /* Usa min-height para garantir que cobre toda a página */
+    height: auto; /* Deixa a altura se ajustar ao conteúdo */
+    position: relative;
+    z-index: 1;
+    padding: 20px; /* Adiciona padding para espaçamento interno */
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(0.28) blur(3px);
+    z-index: -1;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, #026236, transparent);
+    z-index: -1;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #080808; /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2; /* Garantir que o formulário esteja acima da imagem de fundo */
+}
+
+.contact-container h1 {
+    font-family: monospace;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ffffffd4;
+}
+
+.contact-container p {
+    text-align: center;
+    color: #959595;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif; /* Mudança de fonte */
+    color: #ffffffcb; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.contact-container input,
+.contact-container select {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-container button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #026236;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: #383838;
+}
+

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Archivo", sans-serif;
+    background: #080808;
+    height: 8vh;
+}
+
+main {
+    background: url("imagens/384046.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92Vh;
+    position: relative;
+    z-index: 1;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(0.28) blur(3px); /* Ajuste o valor conforme necessário (0.5 reduz o brilho em 50%) */
+    z-index: -1; /* Fica atrás do conteúdo do main */
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Ajuste conforme necessário */
+    background: linear-gradient(to top, #026236, transparent);
+    z-index: -1; /* Fica atrás do conteúdo do main */
+}
+
+.text-contener {
+    font-family: monospace;
+    text-align: center;
+    color: #272727;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.prese-box {
+    margin-top: 0px;
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 0px auto; /* Espaçamento externo e centralização */
+    max-width: 600px; /* Largura máxima */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque */
+    margin-left: 5px;
+}
+
+.prese-box h1 {
+    margin-top: 0px;
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-size: 50px;
+    color: #242424;
+}
+
+.prese-box p {
+    margin-top: 0px;
+    color: #b2b2b2;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+
+    font-family: "Archivo", sans-serif;
+}
+
+   
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.chart-container, .table-container {
+    flex: 1;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
